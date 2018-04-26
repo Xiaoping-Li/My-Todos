@@ -1,0 +1,92 @@
+/* include the padding and border in an element's total width and height */
+* {
+	box-sizing: border-box;
+}
+
+/* remove margins and padding from the list */
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* style the list item */
+ul li {
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background-color: #eee;
+	font-size: 18px;
+	transition: 0.2s;
+}
+
+/* set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(even) {
+	background-color: #dadada; 
+}
+
+/*darker background-color on hover */
+ul li:hover {
+	background: #136f13;
+}
+
+/* when clicked on, add a background color 
+ul li.checked {
+	background: #888;
+	color: #fff;
+}*/
+
+/* Add a "checked" mark when clicked on */
+/*ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+} */
+
+/* style the header */
+.inputBox {
+	background-color: #a7f0a7;
+    padding: 10px 40px;
+    color: #4e4e4e;
+    text-align: center;
+    text-shadow: 2px 2px 1px #e6e6e6;
+}
+
+/* clear floats after the header */
+.inputBox:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* style the input */
+.valueInput {
+	border: none;
+	width: 75%;
+	padding: 10px;
+	float: left;
+	font-size: 16px;
+}
+
+/* style the "Add" button */
+.addBtn {
+	padding: 10px;
+	width: 25;
+	background-color: #d9d9d9;
+	color: #555;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.addBtn:hover {
+	background-color: #bbb;
+}
